@@ -9,7 +9,7 @@ import {
   PromptHeading,
 } from "@/components/basics";
 import ChatHeader from "@/components/basics/ChatHeader";
-import { ChatWrapper, Footer, PageLayout, Sidebar } from "@/components/widgets";
+import { ChatWrapper, PageLayout, Sidebar } from "@/components/widgets";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -193,8 +193,6 @@ export default function Home() {
                       promptSubmitHandler={promptSubmitHandler}
                     />
                   </div>
-
-                  <Footer />
                 </>
               ) : (
                 <>
