@@ -224,4 +224,6 @@ const AnswerBox = memo((props: IAnswerBoxProps) => {
   );
 });
 
+AnswerBox.displayName="AnswerBox"
+
 export default AnswerBox;

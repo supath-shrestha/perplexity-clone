@@ -188,4 +188,6 @@ const QuestionBox = memo((props: IQuestionBoxProps) => {
   );
 });
 
+QuestionBox.displayName="QuestionBox"
+
 export default QuestionBox;

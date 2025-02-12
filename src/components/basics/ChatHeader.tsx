@@ -8,7 +8,7 @@ import {
   LinkIcon,
   MinimizedPerplexityLogo,
 } from "../icons";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 
 interface IChatHeaderProps {
   title: string;
@@ -24,7 +24,7 @@ export default function ChatHeader(props: IChatHeaderProps) {
     return Date.now();
   }, []);
 
-  const calculateTimeAgo = (): string => {
+  const calculateTimeAgo = useCallback((): string => {
     const currentTime = Date.now();
 
     const diffInSeconds = Math.floor((currentTime - timestamp) / 1000);
@@ -40,7 +40,7 @@ export default function ChatHeader(props: IChatHeaderProps) {
     }
 
     return "Unknown";
-  };
+  }, []);
 
   useEffect(() => {
     setTimeAgo(calculateTimeAgo());
