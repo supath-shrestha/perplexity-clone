@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      // borderColor: {
+      //   "borderMain/50": "oklch(var(--dark-border-color-100) / 0.5)",
+      // },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
