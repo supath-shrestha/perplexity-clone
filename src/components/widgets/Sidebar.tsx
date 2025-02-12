@@ -13,6 +13,7 @@ import {
 } from "../icons";
 import NavItem from "../basics/NavItem";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Sidebar() {
   const [isSidebarMinimized, setIsSidebarMinimized] = useState(false);
@@ -44,25 +45,25 @@ export default function Sidebar() {
               {/* Perplexity Logo  */}
               {isSidebarMinimized && (
                 <span>
-                  <a aria-label="Perplexity" className="block" href="/">
+                  <Link aria-label="Perplexity" className="block" href="/">
                     <div
                       className={`h-auto group w-10 transition-all duration-300 ease-in-out hover:scale-105`}
                     >
                       <MinimizedPerplexityLogo />
                     </div>
-                  </a>
+                  </Link>
                 </span>
               )}
 
               {!isSidebarMinimized && (
                 <span>
-                  <a aria-label="Perplexity" className="block" href="/">
+                  <Link aria-label="Perplexity" className="block" href="/">
                     <div className="ml-xs pl-md pr-sm pt-xs">
                       <div className="h-auto group w-28 md:w-[140px]">
                         <PerplexityLogo />
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </span>
               )}
             </div>

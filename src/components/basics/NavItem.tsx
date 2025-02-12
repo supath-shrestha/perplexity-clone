@@ -3,6 +3,7 @@
 import { INavItemOptions } from "@/constants";
 import { usePathname } from "next/navigation";
 import Tooltip from "./Tooltip";
+import Link from "next/link";
 
 interface INavItemProps {
   item: INavItemOptions;
@@ -84,14 +85,14 @@ function NavItemWrapper({
     );
   } else {
     return (
-      <a
+      <Link
         role="button"
         aria-label={item.text}
         className={`${style}`}
-        href={item.navigateTo}
+        href={`${item.navigateTo}`}
       >
         {children}
-      </a>
+      </Link>
     );
   }
 }

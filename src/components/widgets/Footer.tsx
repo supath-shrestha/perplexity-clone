@@ -1,51 +1,53 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <div className="pb-md hidden md:block">
       <div>
         <div className="gap-x-md gap-y-sm px-sm pb-2xl flex flex-wrap items-center md:justify-center md:px-0 md:pb-0 border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-transparent">
-          <a href="/pro">
+          <Link href="/pro">
             <div>
               <div className="decoration-textOff/40 dark:decoration-textOffDark/40 hover:underline light font-sans text-sm text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark">
                 Pro
               </div>
             </div>
-          </a>
-          <a target="_blank" href="https://www.perplexity.ai/enterprise">
+          </Link>
+          <Link target="_blank" href="https://www.perplexity.ai/enterprise">
             <div>
               <div className="decoration-textOff/40 dark:decoration-textOffDark/40 hover:underline light font-sans text-sm text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark">
                 Enterprise
               </div>
             </div>
-          </a>
-          <a target="_blank" href="https://www.perplexity.supply">
+          </Link>
+          <Link target="_blank" href="https://www.perplexity.supply">
             <div>
               <div className="decoration-textOff/40 dark:decoration-textOffDark/40 hover:underline light font-sans text-sm text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark">
                 Store
               </div>
             </div>
-          </a>
-          <a target="_blank" href="https://www.perplexity.ai/hub">
+          </Link>
+          <Link target="_blank" href="https://www.perplexity.ai/hub">
             <div>
               <div className="decoration-textOff/40 dark:decoration-textOffDark/40 hover:underline light font-sans text-sm text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark">
                 Blog
               </div>
             </div>
-          </a>
-          <a target="_blank" href="https://www.perplexity.ai/hub/careers">
+          </Link>
+          <Link target="_blank" href="https://www.perplexity.ai/hub/careers">
             <div>
               <div className="decoration-textOff/40 dark:decoration-textOffDark/40 hover:underline light font-sans text-sm text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark">
                 Careers
               </div>
             </div>
-          </a>
-          <a target="_blank" href="https://www.perplexity.com/education">
+          </Link>
+          <Link target="_blank" href="https://www.perplexity.com/education">
             <div>
               <div className="decoration-textOff/40 dark:decoration-textOffDark/40 hover:underline light font-sans text-sm text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark">
                 Education
               </div>
             </div>
-          </a>
-          
+          </Link>
+
           <div className="gap-xs decoration-textOff/40 dark:decoration-textOffDark/40 relative flex cursor-pointer items-center justify-stretch overflow-hidden hover:underline light font-sans text-sm text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark">
             English (English)
             <div className="absolute left-0 top-0 opacity-0">

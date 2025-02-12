@@ -7,7 +7,6 @@ import {
   HelpMenu,
   PromptBox,
   PromptHeading,
-  SuggestionBox,
 } from "@/components/basics";
 import ChatHeader from "@/components/basics/ChatHeader";
 import { ChatWrapper, Footer, PageLayout, Sidebar } from "@/components/widgets";
@@ -37,7 +36,7 @@ export default function Home() {
     if (containerRef.current) {
       setWidth(containerRef.current.offsetWidth);
     }
-  });
+  },[]);
 
   const getCompleteChatLog = ({
     arr1,
@@ -46,7 +45,7 @@ export default function Home() {
     arr1: Array<ChatCompletionMessageParam>;
     arr2: Array<ChatCompletionMessageParam>;
   }) => {
-    let resultArr = [];
+    const resultArr = [];
 
     for (let i = 0; i < arr1.length; i++) {
       resultArr.push(arr1[i]);
@@ -193,8 +192,6 @@ export default function Home() {
                       setIsInitialPrompt={setIsInitialPrompt}
                       promptSubmitHandler={promptSubmitHandler}
                     />
-
-                    {/* <SuggestionBox /> */}
                   </div>
 
                   <Footer />

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, memo, useEffect } from "react";
+import { useState, memo } from "react";
 import { CopyIcon, PenToSquareIcon } from "../icons";
 
 interface IQuestionBoxProps {
@@ -14,7 +14,7 @@ interface IQuestionBoxProps {
   }) => void;
 }
 
-export const QuestionBox = memo((props: IQuestionBoxProps) => {
+const QuestionBox = memo((props: IQuestionBoxProps) => {
   const { question, queryUpdateSubmitHanlder } = props;
 
   const [isEditable, setIsEditable] = useState(false);

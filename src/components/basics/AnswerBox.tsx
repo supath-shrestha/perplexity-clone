@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useEffect } from "react";
+import { memo } from "react";
 import {
   CopyIcon,
   EllipsisIcon,
@@ -18,7 +18,7 @@ interface IAnswerBoxProps {
   isLoading?: boolean;
 }
 
-export const AnswerBox = memo((props: IAnswerBoxProps) => {
+const AnswerBox = memo((props: IAnswerBoxProps) => {
   const { answer, isLoading = false } = props;
 
   return (

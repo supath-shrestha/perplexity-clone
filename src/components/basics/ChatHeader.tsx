@@ -22,7 +22,7 @@ export default function ChatHeader(props: IChatHeaderProps) {
 
   const timestamp = useMemo(() => {
     return Date.now();
-  }, [title]);
+  }, []);
 
   const calculateTimeAgo = (): string => {
     const currentTime = Date.now();
@@ -50,7 +50,7 @@ export default function ChatHeader(props: IChatHeaderProps) {
     }, 60000);
 
     return () => clearInterval(intervalId);
-  }, [timestamp]);
+  }, [timestamp, calculateTimeAgo]);
 
   return (
     <div className="sticky left-0 right-0 top-0 z-10 border-b md:mb-0 md:rounded-t-xl border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50  dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">
